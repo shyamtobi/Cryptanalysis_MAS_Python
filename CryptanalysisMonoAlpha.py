@@ -1,14 +1,4 @@
-'''
-Program to decipher the Cipher Text received by Darth from a conversation between Alice and Bob encrypted using Monoalphabetic Cipher.
 
-Algorithm:
-1. Use a random key and set this as the parent key
-Do this for 1000 iterations:
-    2. Store the fitness score (score based on occurrences of Quadgrams) of the deciphered text using key
-    3. Swap 2 characters in the parent key and set this as child. If fitness score calculated using the child is greater than parent then set the parent as child key
-4. Print current best key and best plaintext if fitness score is higher than from the earlier iterations and move back to step 1
-
-@author: anirudhravi
 '''
 from pycipher import SimpleSubstitution as SimpleSub
 import time
